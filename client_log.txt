@@ -1,0 +1,452 @@
+     [java] Server URL: https://thawing-caverns-3996.herokuapp.com/ws/people?wsdl
+     [java] -------------- M #1 --------------
+     [java]   Retrived people:
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: Chuck
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] 
+     [java]  ==> ID:3
+     [java]  ==> Firstname: Chuck6c826b78-622b-4cad-83ec-4e2fd83aa100
+     [java]  ==> Lastname: dddddd
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: pippo.pappo@gmail.com
+     [java]  ==> Username: pippo
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1604
+     [java]  ==> Firstname: Chuck36e33535-86ac-4fbd-8314-2fcc1aff0d24
+     [java]  ==> Lastname: Rossi
+     [java]  ==> Birthdate: 1992-04-13
+     [java]  ==> email: ciao@hotmail.it
+     [java]  ==> Username: Pi Ro
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] -------------- M #2 --------------
+     [java] Person with given ID: 1
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: Chuck
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] -------------- M #3 ---------------
+     [java]   Before update
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: Chuck
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java]   After update
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] -------------- M #4 --------------
+     [java] Before creation
+     [java]   Retrived people:
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] 
+     [java]  ==> ID:3
+     [java]  ==> Firstname: Chuck6c826b78-622b-4cad-83ec-4e2fd83aa100
+     [java]  ==> Lastname: dddddd
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: pippo.pappo@gmail.com
+     [java]  ==> Username: pippo
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1604
+     [java]  ==> Firstname: Chuck36e33535-86ac-4fbd-8314-2fcc1aff0d24
+     [java]  ==> Lastname: Rossi
+     [java]  ==> Birthdate: 1992-04-13
+     [java]  ==> email: ciao@hotmail.it
+     [java]  ==> Username: Pi Ro
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] After creation 
+     [java]   Retrived people:
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] 
+     [java]  ==> ID:3
+     [java]  ==> Firstname: Chuck6c826b78-622b-4cad-83ec-4e2fd83aa100
+     [java]  ==> Lastname: dddddd
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: pippo.pappo@gmail.com
+     [java]  ==> Username: pippo
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1604
+     [java]  ==> Firstname: Chuck36e33535-86ac-4fbd-8314-2fcc1aff0d24
+     [java]  ==> Lastname: Rossi
+     [java]  ==> Birthdate: 1992-04-13
+     [java]  ==> email: ciao@hotmail.it
+     [java]  ==> Username: Pi Ro
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1774
+     [java]  ==> Firstname: Charles
+     [java]  ==> Lastname: Darwin
+     [java]  ==> Birthdate: null
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 673
+     [java] 	 ==> date: null
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 90
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] -------------- M #5 --------------
+     [java] Before delete 
+     [java]   Retrived people:
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] 
+     [java]  ==> ID:3
+     [java]  ==> Firstname: Chuck6c826b78-622b-4cad-83ec-4e2fd83aa100
+     [java]  ==> Lastname: dddddd
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: pippo.pappo@gmail.com
+     [java]  ==> Username: pippo
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1604
+     [java]  ==> Firstname: Chuck36e33535-86ac-4fbd-8314-2fcc1aff0d24
+     [java]  ==> Lastname: Rossi
+     [java]  ==> Birthdate: 1992-04-13
+     [java]  ==> email: ciao@hotmail.it
+     [java]  ==> Username: Pi Ro
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1774
+     [java]  ==> Firstname: Charles
+     [java]  ==> Lastname: Darwin
+     [java]  ==> Birthdate: null
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 673
+     [java] 	 ==> date: null
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 90
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] After delete 
+     [java]   Retrived people:
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] 
+     [java]  ==> ID:3
+     [java]  ==> Firstname: Chuck6c826b78-622b-4cad-83ec-4e2fd83aa100
+     [java]  ==> Lastname: dddddd
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: pippo.pappo@gmail.com
+     [java]  ==> Username: pippo
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] 
+     [java]  ==> ID:1604
+     [java]  ==> Firstname: Chuck36e33535-86ac-4fbd-8314-2fcc1aff0d24
+     [java]  ==> Lastname: Rossi
+     [java]  ==> Birthdate: 1992-04-13
+     [java]  ==> email: ciao@hotmail.it
+     [java]  ==> Username: Pi Ro
+     [java]  ==> Current health profile: 
+     [java] 
+     [java] -------------- M #6 --------------
+     [java] History
+     [java] With person ID 1, measure type: weight
+     [java]  ==> mid: 1
+     [java]  ==> date: 2012-12-27 23:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 105
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 2
+     [java]  ==> date: 2013-02-26 23:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 3
+     [java]  ==> date: 2013-06-29 22:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 75
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 4
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 90
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 5
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 100
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 6
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 100
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 7
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 100
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 8
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 100
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 9
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 100
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 10
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 11
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 12
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 13
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 14
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 15
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 16
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 17
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 18
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 19
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 20
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 80
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 21
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 81
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 22
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 82
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 23
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 83
+     [java]  ==> measure value type: double
+     [java] 
+     [java] -------------- M #7 --------------
+     [java] Measure Types
+     [java]  ==> weight
+     [java]  ==> height
+     [java]  ==> steps
+     [java]  ==> blood pressure
+     [java]  ==> heart rate
+     [java]  ==> bmi
+     [java] -------------- M #8 --------------
+     [java] A persons's measure with mid: 1
+     [java]  ==> mid: 1
+     [java]  ==> date: 2012-12-27 23:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 105
+     [java]  ==> measure value type: double
+     [java] 
+     [java] -------------- M #9 --------------
+     [java] Creating new lifeStatus (measure) 
+     [java] Before saving new life status
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] After saving new life status
+     [java] 
+     [java]  ==> ID:1
+     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Lastname: asrdsfds
+     [java]  ==> Birthdate: 1945-01-01 00:00:00
+     [java]  ==> email: null
+     [java]  ==> Username: null
+     [java]  ==> Current health profile: 
+     [java] 	 ==> mid: 1
+     [java] 	 ==> date: 2015-13-03
+     [java] 	 ==> measure type:weight
+     [java] 	 ==> measure value: 85
+     [java] 	 ==> measure value type:double
+     [java] 
+     [java] -------------- M #10 --------------
+     [java] Updating a history with person id: 1, mid: 1, measure type: weight
+     [java]  ==> mid: 1
+     [java]  ==> date: 2012-12-27 23:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 105
+     [java]  ==> measure value type: double
+     [java] 
+     [java] New values
+     [java]  ==> mid: 1
+     [java]  ==> date: 2012-12-27 23:00:00
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 106
+     [java]  ==> measure value type: double
+     [java] 
