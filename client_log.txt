@@ -1,9 +1,9 @@
      [java] Server URL: https://thawing-caverns-3996.herokuapp.com/ws/people?wsdl
-     [java] -------------- M #1 --------------
+     [java] -------------- M #1 readPersonList() --------------
      [java]   Retrived people:
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: Chuck
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -12,7 +12,7 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] 
@@ -33,11 +33,11 @@
      [java]  ==> Username: Pi Ro
      [java]  ==> Current health profile: 
      [java] 
-     [java] -------------- M #2 --------------
+     [java] -------------- M #2 readPerson(int personId) : readPerson(1)  --------------
      [java] Person with given ID: 1
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: Chuck
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -46,14 +46,14 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
-     [java] -------------- M #3 ---------------
+     [java] -------------- M #3 updatePerson(int personId): updatePerson(1)---------------
      [java]   Before update
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: Chuck
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -62,13 +62,13 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java]   After update
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -77,15 +77,15 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
-     [java] -------------- M #4 --------------
+     [java] -------------- M #4 int createPerson() --------------
      [java] Before creation
      [java]   Retrived people:
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -94,7 +94,7 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] 
@@ -119,7 +119,7 @@
      [java]   Retrived people:
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -128,7 +128,7 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] 
@@ -150,25 +150,25 @@
      [java]  ==> Current health profile: 
      [java] 
      [java] 
-     [java]  ==> ID:1774
+     [java]  ==> ID:1777
      [java]  ==> Firstname: Charles
      [java]  ==> Lastname: Darwin
      [java]  ==> Birthdate: null
      [java]  ==> email: null
      [java]  ==> Username: null
      [java]  ==> Current health profile: 
-     [java] 	 ==> mid: 673
+     [java] 	 ==> mid: 676
      [java] 	 ==> date: null
      [java] 	 ==> measure type:weight
      [java] 	 ==> measure value: 90
      [java] 	 ==> measure value type:double
      [java] 
-     [java] -------------- M #5 --------------
+     [java] -------------- M #5 deletePerson(int toDelete): deletePerson(perviouslyCreatedPersonId) --------------
      [java] Before delete 
      [java]   Retrived people:
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -177,7 +177,7 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] 
@@ -199,14 +199,14 @@
      [java]  ==> Current health profile: 
      [java] 
      [java] 
-     [java]  ==> ID:1774
+     [java]  ==> ID:1777
      [java]  ==> Firstname: Charles
      [java]  ==> Lastname: Darwin
      [java]  ==> Birthdate: null
      [java]  ==> email: null
      [java]  ==> Username: null
      [java]  ==> Current health profile: 
-     [java] 	 ==> mid: 673
+     [java] 	 ==> mid: 676
      [java] 	 ==> date: null
      [java] 	 ==> measure type:weight
      [java] 	 ==> measure value: 90
@@ -216,7 +216,7 @@
      [java]   Retrived people:
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -225,7 +225,7 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] 
@@ -246,13 +246,13 @@
      [java]  ==> Username: Pi Ro
      [java]  ==> Current health profile: 
      [java] 
-     [java] -------------- M #6 --------------
+     [java] -------------- M #6 readPersonHistory(int personId, String measuryType) :readPersonHistory(1, weight)--------------
      [java] History
-     [java] With person ID 1, measure type: weight
+     [java] With person ID: 1, measure type: weight
      [java]  ==> mid: 1
      [java]  ==> date: 2012-12-27 23:00:00
      [java]  ==> measure type: weight
-     [java]  ==> measure value: 105
+     [java]  ==> measure value: 108
      [java]  ==> measure value type: double
      [java] 
      [java]  ==> mid: 2
@@ -387,7 +387,25 @@
      [java]  ==> measure value: 83
      [java]  ==> measure value type: double
      [java] 
-     [java] -------------- M #7 --------------
+     [java]  ==> mid: 24
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 84
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 25
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 85
+     [java]  ==> measure value type: double
+     [java] 
+     [java]  ==> mid: 26
+     [java]  ==> date: 2015-13-03
+     [java]  ==> measure type: weight
+     [java]  ==> measure value: 86
+     [java]  ==> measure value type: double
+     [java] 
+     [java] -------------- M #7 readMeasureTypes() --------------
      [java] Measure Types
      [java]  ==> weight
      [java]  ==> height
@@ -395,20 +413,20 @@
      [java]  ==> blood pressure
      [java]  ==> heart rate
      [java]  ==> bmi
-     [java] -------------- M #8 --------------
+     [java] -------------- M #8 readPersonMeasure(int personId, String measuryType, int mid): readPersonMeasure(1, weight, 1)--------------
      [java] A persons's measure with mid: 1
      [java]  ==> mid: 1
      [java]  ==> date: 2012-12-27 23:00:00
      [java]  ==> measure type: weight
-     [java]  ==> measure value: 105
+     [java]  ==> measure value: 108
      [java]  ==> measure value type: double
      [java] 
-     [java] -------------- M #9 --------------
+     [java] -------------- M #9 savePersonMeasure(int personId) :savePersonMeasure(1)--------------
      [java] Creating new lifeStatus (measure) 
      [java] Before saving new life status
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -417,13 +435,13 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 84
+     [java] 	 ==> measure value: 87
      [java] 	 ==> measure value type:double
      [java] 
      [java] After saving new life status
      [java] 
      [java]  ==> ID:1
-     [java]  ==> Firstname: ChuckUpdate
+     [java]  ==> Firstname: ChuckUpdateUpdateUpdateUpdate
      [java]  ==> Lastname: asrdsfds
      [java]  ==> Birthdate: 1945-01-01 00:00:00
      [java]  ==> email: null
@@ -432,21 +450,21 @@
      [java] 	 ==> mid: 1
      [java] 	 ==> date: 2015-13-03
      [java] 	 ==> measure type:weight
-     [java] 	 ==> measure value: 85
+     [java] 	 ==> measure value: 88
      [java] 	 ==> measure value type:double
      [java] 
-     [java] -------------- M #10 --------------
-     [java] Updating a history with person id: 1, mid: 1, measure type: weight
+     [java] -------------- M #10 updatePersonMeasure(int personId, int mid) :updatePersonMeasure(1, 1)--------------
+     [java] Updating a history with person id: 1, mid: 1
      [java]  ==> mid: 1
      [java]  ==> date: 2012-12-27 23:00:00
      [java]  ==> measure type: weight
-     [java]  ==> measure value: 105
+     [java]  ==> measure value: 108
      [java]  ==> measure value type: double
      [java] 
      [java] New values
      [java]  ==> mid: 1
      [java]  ==> date: 2012-12-27 23:00:00
      [java]  ==> measure type: weight
-     [java]  ==> measure value: 106
+     [java]  ==> measure value: 109
      [java]  ==> measure value type: double
      [java] 

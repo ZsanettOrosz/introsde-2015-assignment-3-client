@@ -13,7 +13,6 @@ public class PeopleClient {
 
 	private int createdPersonId;
 
-
 	public void printPerson(Person p) {
 		System.out.println();
 		System.out.println(" ==> ID:" + p.getIdPerson());
@@ -34,7 +33,8 @@ public class PeopleClient {
 					+ p.getCurrentHealth().getLifeStatus().get(i)
 							.getMeasureType().getMeasureType());
 			System.out.println("\t ==> measure value: "
-					+ p.getCurrentHealth().getLifeStatus().get(i).getMeasureValue());
+					+ p.getCurrentHealth().getLifeStatus().get(i)
+							.getMeasureValue());
 			System.out.println("\t ==> measure value type:"
 					+ p.getCurrentHealth().getLifeStatus().get(i)
 							.getMeasureType().getMeasureValueType());
@@ -47,11 +47,10 @@ public class PeopleClient {
 		System.out.println(" ==> date: " + his.getDateRegistered());
 		System.out.println(" ==> measure type: "
 				+ his.getMeasureDefinition().getMeasureType());
-		System.out.println(" ==> measure value: "
-				+ his.getMeasureValue());
+		System.out.println(" ==> measure value: " + his.getMeasureValue());
 		System.out.println(" ==> measure value type: "
 				+ his.getMeasureDefinition().getMeasureValueType());
-		
+
 		System.out.println();
 	}
 
@@ -67,9 +66,9 @@ public class PeopleClient {
 		}
 
 	}
-	
-	public void readPerson() {
-		int personId = 1;
+
+	public void readPerson(int personId) {
+
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		Person p = people.readPerson(personId);
@@ -77,8 +76,8 @@ public class PeopleClient {
 		printPerson(p);
 	}
 
-	public void updatePerson() {
-		int personId = 1;
+	public void updatePerson(int personId) {
+
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		Person p = people.readPerson(personId);
@@ -87,7 +86,7 @@ public class PeopleClient {
 		printPerson(p);
 
 		p.setFirstname(p.getFirstname() + "Update");
-		//p.setFirstname("Chuck");
+		// p.setFirstname("Chuck");
 		Holder<Person> hp = new Holder<Person>(p);
 		people.updatePerson(hp);
 		Person updatedPerson = people.readPerson(personId);
@@ -96,7 +95,7 @@ public class PeopleClient {
 		printPerson(updatedPerson);
 	}
 
-	public void createPerson() {
+	public int createPerson() {
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 
@@ -122,29 +121,28 @@ public class PeopleClient {
 
 		Person created = people.readPersonList().get(
 				people.readPersonList().size() - 1);
-		createdPersonId = created.getIdPerson();
+		// createdPersonId = created.getIdPerson();
 
 		System.out.println("After creation ");
 		readPersonList();
+
+		return created.getIdPerson();
 	}
 
-	public void deletePerson() {
-		int personId = createdPersonId;
+	public void deletePerson(int toDelete) {
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		System.out.println("Before delete ");
 		readPersonList();
 
-		Holder<Integer> hp = new Holder<Integer>(personId);
+		Holder<Integer> hp = new Holder<Integer>(toDelete);
 		people.deletePerson(hp);
 
 		System.out.println("After delete ");
 		readPersonList();
 	}
 
-	public void readPersonHistory() {
-		int personId = 1;
-		String measuryType = "weight";
+	public void readPersonHistory(int personId, String measuryType) {
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		System.out.println("History");
@@ -168,10 +166,8 @@ public class PeopleClient {
 		}
 	}
 
-	public void readPersonMeasure() {
-		int personId = 1;
-		String measuryType = "weight";
-		int mid = 1;
+	public void readPersonMeasure(int personId, String measuryType, int mid) {
+
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 
@@ -181,8 +177,7 @@ public class PeopleClient {
 		printHistory(his);
 	}
 
-	public void savePersonMeasure() {
-		int personId = 1;
+	public void savePersonMeasure(int personId) {
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		System.out.println("Creating new lifeStatus (measure) ");
@@ -196,8 +191,10 @@ public class PeopleClient {
 		def.setIdMeasureDef(1);
 		def.setMeasureType("weight");
 		ls.setMeasureType(def);
-		String oldValue = p.getCurrentHealth().getLifeStatus().get(p.getCurrentHealth().getLifeStatus().size()-1).getMeasureValue();
-		int intValue = Integer.parseInt(oldValue) + 1 ;
+		String oldValue = p.getCurrentHealth().getLifeStatus()
+				.get(p.getCurrentHealth().getLifeStatus().size() - 1)
+				.getMeasureValue();
+		int intValue = Integer.parseInt(oldValue) + 1;
 		String newValue = Integer.toString(intValue);
 		ls.setMeasureValue(newValue);
 		ls.setDateRegistered("2015-13-03");
@@ -215,26 +212,26 @@ public class PeopleClient {
 
 	}
 
-	public void updatePersonMeasure() {
-		int personId = 1;
-		int mid = 1;
+	public void updatePersonMeasure(int personId, int mid) {
 		String measureType = "weight";
-		
+
 		People_Service service = new People_Service();
 		People people = service.getPeopleImplPort();
 		System.out.println("Updating a history with person id: " + personId
-				+ ", mid: " + mid + ", measure type: " + measureType);
+				+ ", mid: " + mid);
 
-		HealthMeasureHistory oldH = people.readPersonMeasure(personId, measureType, mid);
+		HealthMeasureHistory oldH = people.readPersonMeasure(personId,
+				measureType, mid);
 		printHistory(oldH);
-		
+
 		int newvalue = Integer.parseInt(oldH.getMeasureValue()) + 1;
 		oldH.setMeasureValue(Integer.toString(newvalue));
 
 		people.updatePersonMeasure(personId, oldH);
 
 		System.out.println("New values");
-		HealthMeasureHistory newH = people.readPersonMeasure(personId, measureType, mid);
+		HealthMeasureHistory newH = people.readPersonMeasure(personId,
+				measureType, mid);
 		printHistory(newH);
 
 	}
@@ -246,35 +243,42 @@ public class PeopleClient {
 		System.out
 				.println("Server URL: https://thawing-caverns-3996.herokuapp.com/ws/people?wsdl");
 
-		System.out.println("-------------- M #1 --------------");
+		System.out
+				.println("-------------- M #1 readPersonList() --------------");
 		c.readPersonList();
 
-		System.out.println("-------------- M #2 --------------");
-		c.readPerson();
+		System.out
+				.println("-------------- M #2 readPerson(int personId) : readPerson(1)  --------------");
+		c.readPerson(1);
 
-		System.out.println("-------------- M #3 ---------------");
-		c.updatePerson();
+		System.out
+				.println("-------------- M #3 updatePerson(int personId): updatePerson(1)---------------");
+		c.updatePerson(1);
 
-		System.out.println("-------------- M #4 --------------");
-		c.createPerson();
+		System.out
+				.println("-------------- M #4 int createPerson() --------------");
+		int createdPerson = c.createPerson();
 
-		System.out.println("-------------- M #5 --------------");
-		c.deletePerson();
+		System.out
+				.println("-------------- M #5 deletePerson(int toDelete): deletePerson(perviouslyCreatedPersonId) --------------");
+		c.deletePerson(createdPerson);
 
-		System.out.println("-------------- M #6 --------------");
-		c.readPersonHistory();
+		System.out
+				.println("-------------- M #6 readPersonHistory(int personId, String measuryType) :readPersonHistory(1, weight)--------------");
+		c.readPersonHistory(1, "weight");
 
-		System.out.println("-------------- M #7 --------------");
+		System.out
+				.println("-------------- M #7 readMeasureTypes() --------------");
 		c.readMeasureTypes();
 
-		System.out.println("-------------- M #8 --------------");
-		c.readPersonMeasure();
+		System.out.println("-------------- M #8 readPersonMeasure(int personId, String measuryType, int mid): readPersonMeasure(1, weight, 1)--------------");
+		c.readPersonMeasure(1, "weight", 1);
 
-		System.out.println("-------------- M #9 --------------");
-		c.savePersonMeasure();
+		System.out.println("-------------- M #9 savePersonMeasure(int personId) :savePersonMeasure(1)--------------");
+		c.savePersonMeasure(1);
 
-		System.out.println("-------------- M #10 --------------");
-		c.updatePersonMeasure();
+		System.out.println("-------------- M #10 updatePersonMeasure(int personId, int mid) :updatePersonMeasure(1, 1)--------------");
+		c.updatePersonMeasure(1, 1);
 
 	}
 
